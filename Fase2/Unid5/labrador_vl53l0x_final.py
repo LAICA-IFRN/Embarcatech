@@ -7,7 +7,7 @@
 #
 # Sensor:     VL53L0X 
 # Tipo:       Sensor de distância a laser
-# Protocolo:  Protocolo I²C
+# Protocolo:  I²C
 #
 # Autor:      Prof Leonardo Amorim
 # Data:       26/10/2025
