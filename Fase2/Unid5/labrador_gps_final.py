@@ -1,3 +1,33 @@
+#
+# ============================================================================
+# Prof EmbarcaTech - Unidade 5, Aula 4: Interfaces Seriais (UART, I²C, SPI) 
+# ============================================================================
+#
+# Placa:      Caninos Loucos Labrador Core v2.2 (32-bits)
+#
+# Sensor:     GY-GPS6MV2 (baseado no U-blox NEO-6M) 
+# Tipo:       Módulo Receptor GPS
+# Protocolo:  UART (Serial TTL 3,3V)
+#
+# Autor:      Prof Leonardo Amorim
+# Data:       26/10/2025
+#
+# Descrição:
+# Este script configura a porta UART da Labrador para receber
+# dados NMEA do módulo GPS. Ele faz o parsing (análise) das
+# sentenças para extrair latitude, longitude e hora.
+# 
+# Conexão:
+# VCC (GPS) -> Pino 5V (Labrador - Pino 2 ou 4) - Crucial, pois o módulo
+# tem regulador e alimentar em 3,3V não resolverá​
+# GND (GPS) -> Pino GND (Labrador)​
+# TXD (GPS / Transmissão) -> Pino 10 (Labrador / UART0_RX)​
+# RXD (GPS / Recepção) -> Pino 8 (Labrador / UART0_TX)​
+# Antena GPS: Conectada firmemente e posicionada com boa visibilidade do céu.
+#
+# ============================================================================
+#
+
 import time
 import serial
 import sys
