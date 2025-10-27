@@ -1,10 +1,9 @@
 #
 # ============================================================================
-# Prof EmbarcaTech - Unidade 5, aula 4: Interfaces Seriais (UART, I²C, SPI) 
+# Prof EmbarcaTech - Unidade 5, Aula 4: Interfaces Seriais (UART, I²C, SPI) 
 # ============================================================================
 #
 # Placa:      Caninos Loucos Labrador Core v2.2 (32-bits)
-# SDK:        Caninos SDK (https://github.com/caninos-loucos/caninos-sdk)
 #
 # Sensor:     VL53L0X 
 # Tipo:       Sensor de distância a laser
