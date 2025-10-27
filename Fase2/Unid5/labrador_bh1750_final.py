@@ -1,3 +1,30 @@
+#
+# ============================================================================
+# Prof EmbarcaTech - Unidade 5, Aula 4: Interfaces Seriais (UART, I²C, SPI) 
+# ============================================================================
+#
+# Placa:      Caninos Loucos Labrador Core v2.2 (32-bits)
+#
+# Sensor:     BH1750  
+# Tipo:       Sensor de Luminosidade Ambiente (Luxímetro)
+# Protocolo:  I²C
+#
+# Autor:      Prof Leonardo Amorim
+# Data:       27/10/2025
+#
+# Descrição:
+# Este script inicializa o barramento I2C da Labrador e realiza
+# leituras contínuas de iluminância (em Lux) do sensor BH1750.
+# 
+# Conexão:
+# SCL (Sensor) -> Pino 5 TWI2_SCLK (Labrador)​
+# SDA (Sensor) -> Pino 3 TWI_SDATA (Labrador)​
+# VCC (Sensor) -> Pino de 3.3V (Labrador)​
+# GND (Sensor) -> Pino GND (Labrador)
+#
+# ============================================================================
+#
+
 import time
 # Importamos I2C e o Erro específico
 from periphery import I2C, I2CError
