@@ -1,3 +1,31 @@
+#
+# ============================================================================
+# Prof EmbarcaTech - Unidade 5, aula 4: Interfaces Seriais (UART, I²C, SPI) 
+# ============================================================================
+#
+# Placa:      Caninos Loucos Labrador Core v2.2 (32-bits)
+# SDK:        Caninos SDK (https://github.com/caninos-loucos/caninos-sdk)
+#
+# Sensor:     VL53L0X 
+# Tipo:       Sensor de distância a laser
+# Protocolo:  Protocolo I²C
+#
+# Autor:      Prof Leonardo Amorim
+# Data:       26/10/2025
+#
+# Descrição:
+# Este script inicializa o barramento I2C da Labrador e realiza
+# medições contínuas de distância a cada 1 segundo.
+# 
+# Conexão:
+# SCL (Sensor) -> Pino 5 TWI2_SCLK (Labrador)​
+# SDA (Sensor) -> Pino 3 TWI_SDATA (Labrador)​
+# VCC (Sensor) -> Pino de 3.3V (Labrador)​
+# GND (Sensor) -> Pino GND (Labrador)
+#
+# ============================================================================
+#
+
 import time
 import sys
 try:
